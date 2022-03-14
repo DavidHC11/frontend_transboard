@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedido</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body>
+<div id="contenedor">
+	<h2 id="encabezado">Registre su pedido</h2>
+	<form id="formulario1" name="formulario1" method="post" action="data.php">
+  	<fieldset id="datos_personales">
+	<legend>Cliente </legend>
+		<label for="nombre">Nombre:</label><br>
+		<input type="text" name="nombre" id="nombre"><br>
+		<label for="apellidos">Apellidos:</label><br>
+		<input type="text" name="apellidos" id="apellidos"><br>
+		<label for="edad">Edad:</label><br>
+		<input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+		<label for="sexo">Sexo:</label><br>
+		<select id="sexo" name="sexo">
+		<option value="X" selected="selected">...</option>
+		<option value="M">Másculino</option>
+		<option value="F">Femenino</option>
+        <option value="O">Otro</option>
+        <option value="--">Prefiero no decirlo</option>
+        <option value="NB">No Binario</option>
+		</select>
+	</fieldset>
+	<fieldset id="Sabores">
+	<legend>Elija su sabor principal</legend>
+    <select id="sabor" name="sabor">
+		<option value="X" selected="selected">...</option>
+		<option value="C">Chocolate</option>
+		<option value="V">Vainilla</option>
+        <option value="F">Fresa</option>
+        <option value="Q">Queso</option>
+        <option value="FR">Frambuesa</option>
+		</select>
+	</fieldset>
+    <fieldset id="Sabores">
+        <legend>Elija su sabor secundario</legend>
+            <input type="radio" name="pelicula" value="1">Chocolate<br>
+            <input type="radio" name="pelicula" value="2" checked="checked">Vainilla<br>
+            <input type="radio" name="pelicula" value="3">Fresa<br>
+            <input type="radio" name="pelicula" value="4">Queso
+        </fieldset>
+	<fieldset id="grupo_opinion">
+		<legend>Detalles adicionales</legend>
+		<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+	</fieldset>
+	<br>
+	<input type="reset" value="Borrar formulario">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Enviar">
+  </form>
+</div>	
+</body>
+</html>
